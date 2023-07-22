@@ -1,17 +1,17 @@
 import React from "react";
 
-const Thread = () => {
+const Thread = ({ user, filteredThread }) => {
   return (
     <article className="feed-card">
       <div className="text-container">
         <div>
           <div className="img-container">
-            <img src="" alt="Profile Avatar" />
+            <img src={user.img} alt="Profile Avatar" />
           </div>
           <div>
             <p>
-              <strong>handle</strong>
-              <p>text</p>
+              <strong>{user.handle}</strong>
+              <p>{filteredThread.text}</p>
             </p>
           </div>
         </div>
